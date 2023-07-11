@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.navbar-nav {
+    margin-right: 5rem;
+  }
+
+.navbar-brand {
+    margin-left: 5rem;
+}
+
+.logo-codoacodo {
+    width:100px;
+}
+
+.comprar-ticket {
+    color: rgb(96, 184, 8);
+}
+
+.textoChico {
+    font-size: .8rem;
+}
+
+.carousel-item img {
+    filter: brightness(50%);
+}
+
+/* Flechas carrousel 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+*/
+
+/* Oradores */
+.card-css {
+    width: 18rem;
+}
+
+.text-card-css {
+    font-size: 0.7rem;
+}
+
+/* Formulario orador */
+.form-orador {
+    max-width: 60%;
+    min-height: calc(80vh - 50px); /* Resta la altura del footer */
+}
+  
+
+.subrayado-puntos {
+    text-decoration: underline dotted;   
+}
+
+
+textarea::placeholder {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+/* Fotter */
+
+.pie-pagina {
+    height: 50px;
+    background-color: #2471A3;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.pie-pagina a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* Boton flotante */
+.cmn-divfloat {
+    position: fixed !important;
+    bottom: 45px;
+    right: 15px;
+    display: none;
+  }
+  
+.cmn-btncircle {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 6px 0px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    opacity: .8;
+}
+ 
+
+/* Adaptable (responsivo) */
+
+@media screen and (max-width: 500px)
+{
+  .navbar-brand 
+  {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 790px)
+{
+    .texto-carrusel{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    textarea::placeholder {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .form-orador {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .pie-pagina{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
